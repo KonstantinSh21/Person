@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b81a2db6-e9a9-4896-b088-1c23d4fca129" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1hDTmXRzIqtjI0OvkD7YvsJcgB4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="65978" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b81a2db6-e9a9-4896-b088-1c23d4fca129" name="Default Changelist" comment="" />
+      <created>1599544823177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599544823177</updated>
+      <workItem from="1599544824489" duration="7920000" />
+      <workItem from="1599560982115" duration="10543000" />
+      <workItem from="1599630415906" duration="26203000" />
+      <workItem from="1599716683329" duration="18332000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="611" y="150" width="688" height="788" key="#PHP" timestamp="1599545282229">
+      <screen x="0" y="27" width="1920" height="1020" />
+    </state>
+    <state x="611" y="150" width="688" height="788" key="#PHP/0.27.1920.1020@0.27.1920.1020" timestamp="1599545282229" />
+    <state x="556" y="451" width="447" height="552" key="FileChooserDialogImpl" timestamp="1599568461234">
+      <screen x="0" y="27" width="1920" height="1020" />
+    </state>
+    <state x="556" y="451" width="447" height="552" key="FileChooserDialogImpl/0.27.1920.1020@0.27.1920.1020" timestamp="1599568461234" />
+    <state x="225" y="310" width="1022" height="737" key="SettingsEditor" timestamp="1599568630302">
+      <screen x="0" y="27" width="1920" height="1020" />
+    </state>
+    <state x="225" y="310" width="1022" height="737" key="SettingsEditor/0.27.1920.1020@0.27.1920.1020" timestamp="1599568630302" />
+    <state x="609" y="252" width="700" height="530" key="recent.locations.popup" timestamp="1599568360081">
+      <screen x="0" y="27" width="1920" height="1020" />
+    </state>
+    <state x="609" y="252" width="700" height="530" key="recent.locations.popup/0.27.1920.1020@0.27.1920.1020" timestamp="1599568360081" />
+    <state x="624" y="244" width="672" height="677" key="run.anything.popup" timestamp="1599733452370">
+      <screen x="0" y="27" width="1920" height="1020" />
+    </state>
+    <state x="624" y="244" width="672" height="677" key="run.anything.popup/0.27.1920.1020@0.27.1920.1020" timestamp="1599733452370" />
+  </component>
+</project>
