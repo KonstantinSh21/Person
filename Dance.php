@@ -3,98 +3,44 @@
 $person = [
 //         0 Jack Rap
     [
-        "name" => "Jack",
-        "music" => "Rap",
+        "name" => "",
+        "music" => "",
         "inBar" => false,
         "dance" => false,
     ],
-//        1 Bob Pock
-    [
-        "name" => "Bob",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        2 Mary Jazz
-    [
-        "name" => "Mary",
-        "music" => "Jazz",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        3 Anna Rap
-    [
-        "name" => "Anna",
-        "music" => "Rap",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        4 Marina Pock
-    [
-        "name" => "Marina",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        5 Irina Pop
-    [
-        "name" => "Irina",
-        "music" => "Pop",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//         6 Artem Pock
-    [
-        "name" => "Artem",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//          7 Ivan Pop
-    [
-        "name" => "Ivan",
-        "music" => "Pop",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//
-    [
-        "name" => "Nasty",
-        "music" => "Jazz",
-        "inBar" => false,
-        "dance" => false,
-    ],
+
+
 ];
 
-class Person
-{
-    function __construct($name, $music)
-    {
-        [
-            "namePerson" => $name,
-            "musicPerson"  => $music,
-            "inBar" => false,
-            "dance" => false
-        ];
-    }
-}
+//class Person
+//{
+//    function __construct($name, $music)
+//    {
+//        [
+//            "namePerson" => $name,
+//            "musicPerson"  => $music,
+//            "inBar" => false,
+//            "dance" => false
+//        ];
+//    }
+//}
 
 //$musicArr = [];
 
 $numberClients = [1, 2, 3, 4, 5, 6, 7, 8];
 $personName = ["Nasty", "Ivan", "Irina", "Marina", "Dad", "Mike", "Bob", "Mary"];
-$music = ["Jazz", "Pock", ];
+$music = ["Jazz", "Pock", "Pop"];
 
-function createRandomRerson($numberClients, $class='Person'){
+function createRandomRerson($numberClients, $person, $personName, $music ){
     $randomAmountRerson = array_rand($numberClients, 1);//3
-
+    var_dump($person);
 
 
 
 }
 
 
-createRandomRerson($numberClients, $person);
+createRandomRerson($numberClients, $person, $personName, $music);
 
 
 //$rand_rey = array_rand($numberClients, 1);
