@@ -1,101 +1,42 @@
 <?php
 //    Люди которые посетят бар
-$person = [
-//         0 Jack Rap
-    [
-        "name" => "Jack",
-        "music" => "Rap",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        1 Bob Pock
-    [
-        "name" => "Bob",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        2 Mary Jazz
-    [
-        "name" => "Mary",
-        "music" => "Jazz",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        3 Anna Rap
-    [
-        "name" => "Anna",
-        "music" => "Rap",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        4 Marina Pock
-    [
-        "name" => "Marina",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//        5 Irina Pop
-    [
-        "name" => "Irina",
-        "music" => "Pop",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//         6 Artem Pock
-    [
-        "name" => "Artem",
-        "music" => "Pock",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//          7 Ivan Pop
-    [
-        "name" => "Ivan",
-        "music" => "Pop",
-        "inBar" => false,
-        "dance" => false,
-    ],
-//
-    [
-        "name" => "Nasty",
-        "music" => "Jazz",
-        "inBar" => false,
-        "dance" => false,
-    ],
-];
-
-class Person
-{
-    function __construct($name, $music)
-    {
-        [
-            "namePerson" => $name,
-            "musicPerson"  => $music,
-            "inBar" => false,
-            "dance" => false
-        ];
-    }
-}
+$person = [];
 
 //$musicArr = [];
 
-$numberClients = [1, 2, 3, 4, 5, 6, 7, 8];
 $personName = ["Nasty", "Ivan", "Irina", "Marina", "Dad", "Mike", "Bob", "Mary"];
-$music = ["Jazz", "Pock", ];
+$music = ["Jazz", "Pock", "Pop" ];
 
-function createRandomRerson($numberClients, $class='Person'){
-    $randomAmountRerson = array_rand($numberClients, 1);//3
+function createRandomRerson($person, $personName, $music ){
+    //Число клиенов которое зайдет в бар
+    $randomAmountRerson = rand(1, 7); 
+    
+    for($i = 0; $i< $randomAmountRerson; $i++){
+        $randomName = array_rand($personName, $randomAmountRerson + 1);
+        
+        $randomMusic = $music[ rand(0,2 )];
+        array_push($person, [
+            "name" => $personName[$randomName[$i]],
+            "music" => $randomMusic,
+            "inBar" => false,
+            "dance" => false
+        ]); 
+    };
+
+  return($person);
+};
+//хранит в себе переменную персон
+createRandomRerson($person, $personName, $music);
 
 
 
+$person = createRandomRerson($person, $personName, $music);
 
-}
-
-
-createRandomRerson($numberClients, $person);
-
+function situatedInBar ($person) {
+    $randomAmountRerson = count($person);
+    var_dump("Второй " .$randomAmountRerson);
+};
+situatedInBar($person );
 
 //$rand_rey = array_rand($numberClients, 1);
 //
@@ -176,3 +117,4 @@ createRandomRerson($numberClients, $person);
 
 
 
+?>
