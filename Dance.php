@@ -1,46 +1,134 @@
 <?php
 //    Люди которые посетят бар
-$person = [
-//         0 Jack Rap
-    [
-        "name" => "",
-        "music" => "",
-        "inBar" => false,
-        "dance" => false,
-    ],
+$personList = [];
 
+$musicArr = [];
 
-];
-
-//class Person
-//{
-//    function __construct($name, $music)
-//    {
-//        [
-//            "namePerson" => $name,
-//            "musicPerson"  => $music,
-//            "inBar" => false,
-//            "dance" => false
-//        ];
-//    }
-//}
-
-//$musicArr = [];
-
-$numberClients = [1, 2, 3, 4, 5, 6, 7, 8];
 $personName = ["Nasty", "Ivan", "Irina", "Marina", "Dad", "Mike", "Bob", "Mary"];
 $music = ["Jazz", "Pock", "Pop"];
 
-function createRandomRerson($numberClients, $person, $personName, $music ){
-    $randomAmountRerson = array_rand($numberClients, 1);//3
-    var_dump($person);
 
 
+function createRandomRerson(&$personList, $personName, $music)
+{   //Число клиенов которое зайдет в бар
+    $randomAmountRerson = rand(2, 7);
+    $personList = [];
+//    for ($i = 0; $i < $randomAmountRerson; $i++){
+//        if ($personList[$i]["inBar"] == false) {
+//            unset($personList[$i]);
+//            var_dump("del");
+//        }
+//    }
+    var_dump(count($personList));
+    for ($i = 0; $i < $randomAmountRerson; $i++) {
+        $randomName = array_rand($personName, $randomAmountRerson + 1);
 
+        $randomMusic = $music[rand(0, 2)];
+        $personList[] = [
+            "name" => $personName[$randomName[$i]],
+            "music" => $randomMusic,
+            "inBar" => false,
+            "dance" => false
+        ];
+
+    }
+}
+
+createRandomRerson($personList, $personName, $music);
+
+function situatedInBar($personList)
+{
+    $randomAmountRerson = count($personList);
+
+
+    for ($i = 0; $i < $randomAmountRerson; $i++) {
+        $personList[$i]["inBar"] = !$personList[$i]["inBar"];
+
+    }
+
+    return $personList;
+}
+
+$personInBar = situatedInBar($personList);
+
+
+function getMusic($personInBar, $musicArr)
+{
+    for ($i = 0; $i < count($personInBar); $i++) {
+        array_push($musicArr, $personInBar[$i]["music"]);
+    }
+    return ($musicArr);
 }
 
 
-createRandomRerson($numberClients, $person, $personName, $music);
+$musicArr = getMusic($personInBar, $musicArr);
+
+// Тут нужно будет обновлять количество людей с каким-то циклом
+for ($i = 0; $i < 100; $i++) {
+//    sleep(10);
+    createRandomRerson($personList, $personName, $music);
+    //
+    $personInBar = situatedInBar($personList);
+    $musicArr = getMusic($personInBar, $musicArr);
+    personInDance($personInBar, $musicArr);
+}
+
+
+function personInDance($personInBar, $musicArr)
+{
+
+//    var_dump($personInBar);
+    foreach ($musicArr as $k => $v) {
+        $cnt = 0;
+
+        foreach ($personInBar as $key => &$value) {
+            sleep(0);
+            //Pock == Jazz Rap Pock
+//            var_dump($value);
+            if ($v == $value["music"]) {
+                var_dump("-----");
+                var_dump($v);
+                $cnt++;
+                var_dump($value["music"]);
+                var_dump("-----");
+                $value["dance"] = true;
+
+            } else {
+                $value['dance'] = false;
+            }
+        }
+
+        echo "personInBar: " . count($personInBar) . " ";
+        echo $cnt . " cnt: " . $cnt . "\n";
+    }
+    return ($personInBar);
+}
+
+$personList = personInDance($personInBar, $musicArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Хранит в себе занчение людей в баре
 
 
 //$rand_rey = array_rand($numberClients, 1);
@@ -118,7 +206,6 @@ createRandomRerson($numberClients, $person, $personName, $music);
 //array_pop($person);
 //
 //var_dump($person);
-
 
 
 
